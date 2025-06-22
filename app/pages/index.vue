@@ -1,25 +1,60 @@
 <template>
-  <div class="flex flex-col items-center justify-center gap-4 h-screen">
-    <h1 class="font-bold text-2xl text-(--ui-primary)">
-      Nuxt UI - Starter
-    </h1>
+  <UDashboardPanel id="home" :ui="{ body: 'bg-elevated/50' }">
+    <template #header>
 
-    <div class="flex items-center gap-2">
-      <UButton
-        label="Documentation"
-        icon="i-lucide-square-play"
-        to="https://ui.nuxt.com/getting-started/installation/nuxt"
-        target="_blank"
-      />
+      <UDashboardNavbar>
 
-      <UButton
-        label="GitHub"
-        color="neutral"
-        variant="outline"
-        icon="i-simple-icons-github"
-        to="https://github.com/nuxt/ui"
-        target="_blank"
-      />
-    </div>
-  </div>
+        <template #leading>
+          <UBreadcrumb :items="breadcrumbItems" />
+        </template>
+
+        <template #right>
+          <UColorModeButton />
+        </template>
+        
+      </UDashboardNavbar>
+
+      <UDashboardToolbar>
+        <UNavigationMenu :items="navigationItems" highlight class="flex-1" />
+      </UDashboardToolbar>
+    </template>
+
+    <template #body>
+      <PatientRecords />
+    </template>
+  </UDashboardPanel>
 </template>
+
+<script setup lang="ts">
+import type { NavigationMenuItem, BreadcrumbItem } from "@nuxt/ui";
+
+const navigationItems: NavigationMenuItem[][] = [
+  [
+    {
+      label: "General",
+      active: true,
+    },
+    {
+      label: "Members",
+    },
+  ],
+  [
+    {
+      label: "Edit session",
+      icon: "streamline-pencil",
+    },
+  ],
+];
+
+const breadcrumbItems = ref<BreadcrumbItem[]>([
+  {
+    label: "Patient records",
+  },
+  {
+    label: "Sarah Thompson",
+  },
+  {
+    label: "Emergency visit for tooth ache",
+  },
+]);
+</script>
