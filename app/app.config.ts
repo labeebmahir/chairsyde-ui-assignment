@@ -1,15 +1,16 @@
 export default defineAppConfig({
-  // https://ui.nuxt.com/getting-started/theme#design-system
   ui: {
     colors: {
-      primary: 'emerald',
-      neutral: 'slate',
+      primary: "green",
+      neutral: "zinc",
     },
-    button: {
-      defaultVariants: {
-        // Set default button color to neutral
-        // color: 'neutral'
-      }
-    }
-  }
-})
+    breadcrumb: {
+      variants: {
+        active: {
+          false: { link: "text-primary" },
+          true: { link: "text-gray-400 font-medium" },
+        },
+      },
+    },
+  },
+});

@@ -2,6 +2,6 @@
   <UDashboardGroup unit="rem">
     <SideBar />
     <slot />
-    <TimeLine />
+    <!-- <TimeLine/> -->
   </UDashboardGroup>
 </template>
