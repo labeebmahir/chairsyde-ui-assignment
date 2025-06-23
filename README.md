@@ -10,7 +10,8 @@
 
 - Used **Nuxt UI Pro** since the Figma design aligns with its components  
 - First time using Nuxt UI Pro, so part of the time was spent understanding it  
-- Some components were partially implemented due to time constraints
+- Some components were partially implemented due to time constraints  
+- Added **light/dark mode toggle** for better user experience
 
 ## Dependencies Used
 
@@ -20,3 +21,7 @@
 - SCSS  
 - @nuxt/fonts (Manrope)  
 - @nuxt/icons (Streamline Ultimate)
+
+## Deployment
+
+Deployment is not included as **Nuxt UI Pro** is a private module and cannot be used in public hosting platforms like Vercel or Netlify without a valid license.
