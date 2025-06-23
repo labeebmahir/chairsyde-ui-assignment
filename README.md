@@ -1,75 +1,22 @@
-# Nuxt UI Starter
+# UI/UX Developer Code Test
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
+## Instructions to Run
 
-## Setup
+1. Clone the repository  
+2. Install dependencies: `npm install`  
+3. Start the development server: `npm run dev`
 
-Make sure to install the dependencies:
+## Assumptions & Decisions
 
-```bash
-# npm
-npm install
+- Used **Nuxt UI Pro** since the Figma design aligns with its components  
+- First time using Nuxt UI Pro, so part of the time was spent understanding it  
+- Some components were partially implemented due to time constraints
 
-# pnpm
-pnpm install
+## Dependencies Used
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Nuxt 3  
+- Nuxt UI Pro  
+- Tailwind CSS v4  
+- SCSS  
+- @nuxt/fonts (Manrope)  
+- @nuxt/icons (Streamline Ultimate)
